@@ -1,0 +1,104 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="chronometer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">96sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:fontFamily">@font/orbitron_bold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="startButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">@drawable/startbutton</item>
+    </style>
+
+    <style name="finishButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">@drawable/finishbutton</item>
+    </style>
+
+    <style name="redButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">@drawable/redbutton</item>
+    </style>
+
+    <style name="resetButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:layout_margin">48dp</item>
+        <item name="android:background">@drawable/resetbutton</item>
+        <item name="android:drawableLeft">@drawable/reset</item>
+    </style>
+
+    <style name="columnLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="columnHeading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="score">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">124sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="results">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="centralDiv">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
+</resources>

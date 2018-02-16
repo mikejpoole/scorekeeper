@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.scorekeeper.MainActivity">
+
+<LinearLayout
+    android:id="@+id/outerWrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c0c0c0"
+    >
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:text="@string/zeroTime"
+        style="@style/chronometer"
+        />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:text="@string/start"
+        android:onClick="startRace"
+        style="@style/startButton"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/mainSection"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <!-- FIRST COLUMN -->
+
+        <LinearLayout
+            android:id="@+id/columnBoat1"
+            style="@style/columnLayout"
+            >
+
+        <TextView
+            android:id="@+id/title"
+            android:text="@string/boat1"
+            style="@style/columnHeading"
+            />
+
+        <TextView
+            android:id="@+id/score1"
+            android:text="@string/zero"
+            style="@style/score"
+            />
+
+
+        <Button
+            android:id="@+id/buttonFinish1"
+            android:text="@string/finish"
+            android:onClick="finishRaceBoat1"
+            style="@style/finishButton"
+            />
+
+        <LinearLayout
+            android:id="@+id/buttonsBoat1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/buttonDns1"
+                    android:text="@string/buttonDns"
+                    style="@style/redButton"
+                    android:onClick="dnsRaceBoat1"
+                />
+
+                <Button
+                    android:id="@+id/buttonDnf1"
+                    android:text="@string/buttonDnf"
+                    style="@style/redButton"
+                    android:onClick="dnfRaceBoat1"
+                    />
+
+                <Button
+                    android:id="@+id/buttonDisq1"
+                    android:text="@string/buttonDisq"
+                    style="@style/redButton"
+                    android:onClick="disqRaceBoat1"
+                    />
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultsBoat1"
+        android:text="@string/zeroResults"
+        style="@style/results"
+        />
+
+</LinearLayout>
+
+        <!-- CENTRAL DIV -->
+
+        <TextView
+            android:id="@+id/centralDiv"
+            style="@style/centralDiv"
+            />
+
+
+        <!-- SECOND COLUMN -->
+
+            <LinearLayout
+                android:id="@+id/columnBoat2"
+                style="@style/columnLayout"
+                >
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:text="@string/boat2"
+                    style="@style/columnHeading"
+                    />
+
+                <TextView
+                    android:id="@+id/score2"
+                    android:text="@string/zero"
+                    style="@style/score"
+                    />
+
+
+                <Button
+                    android:id="@+id/buttonFinish2"
+                    android:text="@string/finish"
+                    android:onClick="finishRaceBoat2"
+                    style="@style/finishButton"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/buttonsBoat2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/buttonDns2"
+                        android:text="@string/buttonDns"
+                        style="@style/redButton"
+                        android:onClick="dnsRaceBoat2"
+                        />
+
+                    <Button
+                        android:id="@+id/buttonDnf2"
+                        android:text="@string/buttonDnf"
+                        style="@style/redButton"
+                        android:onClick="dnfRaceBoat2"
+                        />
+
+                    <Button
+                        android:id="@+id/buttonDisq2"
+                        android:text="@string/buttonDisq"
+                        style="@style/redButton"
+                        android:onClick="disqRaceBoat2"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/resultsBoat2"
+                    android:text="@string/zeroResults"
+                    style="@style/results"
+                    />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/buttonReset"
+        android:text="@string/reset"
+        android:onClick="resetClock"
+        style="@style/resetButton"
+        />
+
+
+</LinearLayout>
+
+</ScrollView>
